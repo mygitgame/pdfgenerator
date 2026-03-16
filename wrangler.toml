@@ -19,6 +19,9 @@ queue = "pdf-jobs"
 max_batch_size = 10
 
 [vars]
+[[durable_objects.bindings]]
+name = "PDF_ENCRYPTOR"
+class_name = "PDF_ENCRYPTOR"
 
 [[containers]]
 class_name = "PDF_ENCRYPTOR"
